@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="gb2312">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>佰锐科技__新闻资讯_基于P2P的流媒体技术概述</title>
+	    <meta name="keywords" content="{metaKeywords}" />
+	    <meta name="description" content="{metaDescription}" />
+        <link rel="stylesheet" href="/Styles/global.css">
+        <link rel="stylesheet" href="/Styles/news.css">
+        <script src="http://a.tbcdn.cn/??s/kissy/1.3.0/kissy-min.js"></script>
+	</head>
+	<body>
+        <!-- 头部{ -->
+	    <div class="header">
+            <div class="inner">
+                <img alt="佰锐科技" src="/images/logo.png" />
+                <!-- 导航{ -->
+                         <ul class="nav" id="nav">
+             <li><a href="/index.html">首页</a></li>
+             <li class="cur"><a href="/news/">新闻资讯</a></li>
+             <li><a href="/product.html">产品</a></li>
+             <li><a href="/solution.html">解决方案</a></li>
+             <li><a href="/introduction.html">关于我们</a></li>
+             <li class="box"></li>
+         </ul>
+
+                <!-- }导航 -->
+            </div>
+            <script type="text/javascript" src="/Scripts/nav.js"></script>
+        </div>
+	    <!-- }头部 -->
+		
+        <div class="banner">
+            <div class="banner_img">
+            </div>	
+        </div>
+    <div class="content">
+        <div class="content_wrapper">
+            <!-- 边导航{ -->
+            <div class="content_left">
+                <div class="content_left_top"></div>
+                <div class="content_left_client">
+                    <div id="menu_bar">
+                             <dl>
+             <dd><a href="./?categoryID=1">公司动态</a></dd>
+             <dd class="selected"><a href="./?categoryID=2">行业资讯</a></dd>
+             <dd><a href="./?categoryID=4">网站公告</a></dd>
+     </dl>
+                    </div>
+                </div>
+                <div class="content_left_bottom"></div>
+
+            </div>
+		    <!-- }边导航 -->
+
+			<div class="content_right clearfix">
+				<div class="mod-crumbs-s3">
+					 <span>您所在的位置：</span><a href="/index.html" class="back-to-index">佰锐科技</a><span class="arrow">></span><a href="/News">新闻资讯</a><span class="arrow">></span><b>基于P2P的流媒体技术概述</b>
+				</div>
+
+				<div id="News">
+                    <div class="news_tit indent_bot4">
+                        <h2>基于P2P的流媒体技术概述</h2>
+                        <p style="color:#959A9F">发表日期：2010-02-21 22:15:33</p>
+                    </div>
+                    <div id="article_content">
+					    <p class="text">摘&nbsp;要：P2P流媒体技术已成为网络应用中热门的技术之一,本文主要介绍流媒体,P2P的相关概念,并着重对P2P流媒体的关键技术进行了研究,最后又提出了P2P流媒体技术应该面对的挑战。 </p>
+<p class="text indent_bottom">关键词：P2P ;流媒体;应用层组播;激励机制</p>
+<p class="text title">1 引言 </p>
+<p class="text indent_bottom">随着互联网的发展,流媒体业务逐渐增多,网络电视,远程教育,视频点播已成为流媒体技术的热门应用。传统的流媒体服务大都是客户/服务器(C/S)模式, 即用户从流媒体服务器点击观看节目, 然后流媒体服务器以单播方式把媒体流推送给用户。当流媒体业务发展到一定阶段后, 用户总数大幅度增加, 这种C/S模式加单播方式来推送媒体流的缺陷便明显地显现出来,如流媒体服务器带宽占用大、流媒体服务器处理能力要求高等,这些常常成为系统瓶颈。P2P技术的引进,为流媒体开辟了新的发展空间。  </p>
+<p class="text title">2 P2P流媒体技术 </p>
+<p class="text title">2.1流媒体技术</p>
+<p class="text indent_bottom">流媒体(streaming Media)是应用流式传输技术在网络上传播音频、视频或多媒体文件。而流技术就是将影像和声音信息经过压缩处理后转换成流媒体,用视频服务器把节目流媒体当成数据包发出,传送到网络上,用户通过解压设备对这些数据进行解压后,节目就会像发送前那样显示出来。这个过程的一系列相关的数据包称为&ldquo;流&rdquo;。流媒体应用的一个最大好处是用户不需要花费很长时间将数据全部下载到本地才能播放,而只需要将起始几秒的数据先下载到本地的缓冲区中就可以开始播放,然后边下载边播放,当网络实际连线速度小于播放所耗用资源的速度时,播放程序就会取用这一小段缓冲区的资料,避免播放中断,也使播放品质得以维持。</p>
+<p class="text title">2.2 P2P技术</p>
+<p class="text indent_bottom">P2P即Peer-to-Peer,称为对等连接或对等网络,是指不同系统之间通过直接交换,实现计算机资源和服务共享的一种应用模式。P2P使得网络上的沟通变得容易、更直接共享和交互,真正地消除中间商。简单的说,P2P就是人可以直接连接到其他用户的计算机、交换文件,而不是像过去那样连接到服务器去浏览与下载。P2P另一个重要特点是改变互联网现在的以大网站为中心的状态、重返&ldquo;非中心化&rdquo;,并把权力交还给用户。在P2P系统中,每一个Peer都是平等的参与者,承担服务使用者和服务提供者两个角色。资源的所有权和控制权被分散到网络的每一个节点中。服务使用者和服务提供者之间进行直接通信,可充分利用网络带宽,减少网络的拥塞状况,使得资源的有效利用率大大提高。P2P系统不同于传统的C/S工作方式,使其具有了新的特点:节点数量大;动态性强;异构性强;分布广泛;网络异步性强等特点。</p>
+<p class="text title">2.3 基于P2P流媒体技术</p>
+<p class="text indent_bottom">在基于P2P的流媒体技术中,每个流媒体用户是一个P2P中的一个节点,用户可以根据他们的网络状态和设备能力与一个或几个用户建立连接来分享数据,这种连接能减少服务器的负担和提高每个用户的视频质量.P2P技术在流媒体应用中特别适用于一些热门事件,即使是大量的用户同时访问流媒体服务器,也不会造成服务器因负载过重而瘫痪 。</p>
+<p class="text indent_bottom">基于P2P的流媒体服务系统并不改变现有的流媒体服务架构,只是在现有系统的基础上,改变传统模式下的服务方式和数据传输路径,使请求同一媒体流的客户端组成一个P2P网络,使服务器只须向这个P2P网络中的少数节点发送数据,而这些节点可以把得到的数据共享给其余的节点,每个节点依然可以通过流媒体系统得到高质量的视频服务。在一个P2P流媒体系统中,一个对等节点的子集拥有一个特定的媒体文件(或文件的一部分),并为对此文件感兴趣的其他节点提供媒体数据。与此同时,请求数据的节点在下载媒体数据的过程中回放并存储这个媒体的数据,并成为可以为其他节点提供流媒体数据上载的节点。</p>
+<p class="text title">3 P2P流媒体关键技术研究</p>
+<p class="text indent_bottom">P2P流媒体的关键技术主要包括:应用层组播技术、容错机制、媒体同步技术、激励机制和安全机制。</p>
+<p class="text title">3.1 应用层组播技术</p>
+<p class="text indent_bottom">组播指的是在Internet网上对一组IP站点进行数据传送,这一组IP站点是动态形成的,每一个IP站点都可以动态地加入或者退出这个组。应用层组播(ALM:Application layer Multicast)是在应用层而不是网络层上实现组播能力,由端系统而不是路由器实现组播转发功能,并将组成员节点直接自组织成一个逻辑覆盖网络。P2P应用层组播结构有单组播树结构,多组播树结构和网络结构。单组播树结构是指在整个组播结构中,数据是通过一棵组播树传输的。树的根结点是组播源,每个非叶结点从自己唯一的父结点得到全部数据,再复制转发给自己所有的子结点,叶结点只从父结点得到数据,不再复制转发。当组中的非叶结点退出时,它的子结点将暂时得不到数据,这时,系统需要尽快重建连接,保证所有结点都在组播树中。多播树结构在数据的传输路径上引入了冗余,视频流不再由一个组播树来完成转发,而是先按设定的编码方式被分割成视频段,然后不同视频段由不同生成树完成转发。这样可以做到一个节点仅在一个组播树中作为转发节点,在其余组播树中作为叶节点,当一个节点出现死机或网络出现故障时,只影响小部分节点。</p>
+<p class="text title">3.2 容错机制</p>
+<p class="text">由于P2P流媒体系统中节点的动态性,正在提供服务的节点可能会离开系统,传输链路也可能因拥塞而失效。为了保证接受服务的连续性,必须采取一些容错机制使系统的服务能力不受影响或尽快恢复。对于节点失效的问题,可以采取主备用节点的方式容错。在选择发送节点时,应选择多个服务节点,其中某个节点(集)作为活动节点(集),其余节点则作为备用节点。流媒体服务的实时性较强, 因此节点的故障检测时间应尽可能短, 才能保证服务不中断。数据的编码技术也可以提供系统的容错性。</p>
+<p class="text title">3.3 媒体同步技术</p>
+<p class="text indent_bottom">由于网络时延,导致媒体流在传输过程中失去同步关系,传输的时延不可预期,媒体同步机制可以确实地恢复媒体流的同步。同步机制的目的就是保证接收端以正确的时间收到的媒体数据。媒体同步机制实际上就是在媒体内或者媒体间说明。对于连续媒体,应用最为广泛的说明方法说明或时间戳。时间戳法是在每个媒体的数据流单元中加进统一的间码,具有相同时间戳的信息单元将同时予以表现。在发送时,将按时间顺序分成单元,在同一个时间轴上,给每个单元都打上一个同一时标的各个媒体单元具有相同的时间戳。在各个媒体到达终端相同时间戳的媒体单元同时进行表现,这样就得到了媒体之间同步。</p>
+<p class="text title">3.4 激励机制</p>
+<p class="text">目前的各种激励机制主要有以下三种:基于微支付机制、基于直接互惠的机制和基于信誉机制。基于微支付机制用虚拟货币作为P2P网络中服务或资源交易的媒介,体现了对节点贡献的反馈,从而使得节点有积极性去参与合作。基于直接互惠的机制的基本思想是P2P网络中的服务提供节点在为其他节点提供服务后能得到某种直接优惠。基于信誉的机制主要是在P2P网络中引入了一个等级的概念,即每一个节点根据自己在网络的历史行为情况获得由网络中与它邻近的其他节点所评价得出的信誉值。在以后的服务或资源交易中,其他节点均根据请求节点的信誉值给予对应等级的回应。</p>
+<p class="text title">3.5 安全机制</p>
+<p class="text indent_bottom">网络安全是P2P流媒体系统的基本要求, 通过安全领域的防火墙、身份识别认证、授权、数据完整性、保密性对P2P信息进行安全控制。数字版权管理(DRM)可以有效保护知识产权,通过DRM技术,内容提供商可以方便地对各种音乐、图像等媒体文件进行加密保护,使受保护的多媒体文件不会被用户非法拷贝和复制。在P2P流媒体系统内,可采用用户分级授权的办法, 阻止非法访问。</p>
+<p class="text title">4 结语</p>
+<p class="text">总之,P2P流媒体代表着未来多媒体数据在网络传输的发展方向,基于此技术的软件产品诸如BT、PPlive、PPStream已得到广泛的应用,并显示出越来越好的发展前景。同时,由于对等网络中的流媒体数据对于网络带宽、延时、实时性和稳定性的要求非常高. 因此需要在应用层网络、媒体分布、节点管理与控制和安全控制等方面进行研究与探索.相信在不久的将来,P2P流媒体系统将带给我们更优质的多媒体服务。 </p>
+                    </div>
+					
+				</div>
+			</div>
+		</div>
+    </div>
+
+    <!-- 页脚{ -->
+	    <!--footer-->
+        <div class="footer">
+            <div class="y-row copyright">          
+                <ul>
+                    <li><a href="/legalNotice.html">法律声明</a></li>
+                    <li><a href="/introduction.html">公司介绍</a></li>
+                    <li><a href="/cultuer.html">企业文化</a></li>
+                    <li><a href="/hr.html">加入佰锐</a></li>
+                    <li class="last"><a href="/contactus.html">联系我们</a> </li>
+                </ul>
+                <p>
+                    &copy; 广州佰锐网络科技有限公司 2005-2015。 粤ICP备13022410号-2
+                </p>
+                <p>
+                    公司地址：广州市天河区天河软件园建工路9号309-310室；咨询电话：020-85276986
+                </p>
+        
+            </div>
+        </div>
+   
+
+    <!-- }页脚 -->
+	</body>
+</html>

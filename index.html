@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>佰锐科技-音视频能力解决方案提供商</title>
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<meta name="keywords"
+	      content="佰锐科技,音视频能力解决方案提供商,音视频开发,AnyChat SDK,语音视频,开发平台,视频会议,视频游戏,远程教育,H.264,H264,视频技术,远程会议系统,即时通讯,多媒体,流媒体,P2P技术,远程招聘,视频招聘系统">
+	<meta content="佰锐科技提供专业的语音视频解决方案，采用先进的H.264技术和P2P流媒体技术，自主研发的系统包括AnyChat音视频互动开发平台、AnyChat视频会议系统、AnyChat在线游戏视频系统、AnyChat远程教育系统等。"
+	      name="description">
+	<!-- <link rel="stylesheet" href="/Styles/style.css"> -->
+	<!--
+<link rel="stylesheet" href="/Styles/global.css">
+<link rel="stylesheet" href="/Styles/index.css?v=20150109">
+<script src="http://a.tbcdn.cn/??s/kissy/1.3.0/kissy-min.js"></script>
+-->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/indexAdd.css">
+
+	<style type="text/css">
+		.iNav {
+			padding-left: 28% !important;
+			background: rgba(0, 0, 0, 0.9) !important;
+		}
+
+		.iNav a {
+			color: white !important;
+			z-index: 500 !important;
+			background: none;
+
+		}
+
+		.now {
+			border-bottom: 2px solid #FFFFFF !important;
+		}
+
+		.navbar-default .navbar-toggle {
+			border-color: white;
+			z-index: 100 !important;
+		}
+
+		.navbar-default .navbar-toggle .icon-bar {
+			/*background-color: #888;*/
+			background-color: white !important;
+		}
+
+		.navbar {
+			position: relative;
+			min-height: 70px !important;
+			margin-bottom: 20px;
+			border: 1px solid transparent;
+			margin-bottom: 0 !important;
+
+		}
+
+		.nav > li {
+			position: relative;
+			display: block;
+			margin-top: 15px !important;
+		}
+
+		.navbar-default .navbar-toggle:focus,
+		.navbar-default .navbar-toggle:hover {
+			background-color: transparent;
+		}
+
+		#logo {
+			z-index: 200 !important;
+		}
+
+		.navbar-brand > img {
+			display: block;
+			z-index: 100;
+			position: absolute;
+			left: 10% !important;
+		}
+
+	</style>
+	<script>
+		(function () {
+			function isPC() {
+				var userAgentInfo = navigator.userAgent;
+				var Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+				var flag = true;
+				for (var v = 0; v < Agents.length; v++) {
+					if (userAgentInfo.indexOf(Agents[v]) > 0) {
+						flag = false;
+						break;
+					}
+				}
+				return flag;
+			}
+
+			if (!isPC()) {
+				var html = document.documentElement;
+				var hWidth = html.getBoundingClientRect().width;
+				html.style.fontSize = hWidth / 15 + "px";
+			} else {
+				var html = document.documentElement;
+				var hWidth = html.getBoundingClientRect().width;
+				html.style.fontSize = hWidth / 25 + "px";
+			}
+			;
+
+		})();
+	</script>
+</head>
+
+<body>
+<!-- 头部{ -->
+<!--<div id="header-cover"></div>-->
+<nav class="navbar navbar-default iNav">
+	<div class="container-fluid">
+
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+			        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a id="logo" class="navbar-brand" href="#">
+				<img src="image/LOGOW.png"/>
+			</a>
+			<!--<div class="logo navbar-brand"></div>-->
+
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li>
+					<a class="now" href="#">首页 <span class="sr-only">(current)</span></a>
+				</li>
+				<li>
+					<a href="#">新闻资讯</a>
+				</li>
+				<li>
+					<a href="product.html">产品</a>
+				</li>
+				<li>
+					<a href="#">解决方案</a>
+				</li>
+				<li>
+					<a href="#">关于我们</a>
+				</li>
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container-fluid -->
+</nav>
+<!-- }头部 -->
+
+<div id="main">
+	<div id="playercontainer" class="video container" style="display: none;"></div>
+
+	<!-- 图片轮播{ -->
+	<div class="video-carousel-wrap" id="forPC-carousel">
+		<div id="video-carousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#video-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#video-carousel" data-slide-to="1"></li>
+				<li data-target="#video-carousel" data-slide-to="2"></li>
+				<li data-target="#video-carousel" data-slide-to="3"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<a href="http://sdk.anychat.cn/html/case.html" target="_blank">
+						<div class="video-list negative-carousel" id="nagative-carousel">
+							<div class="double-record-container first">
+								<img src="./image/double-record/banner-left.png">
+							</div>
+							<div class="double-record-container second">
+								<img src="./image/double-record/banner-right.png">
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="item">
+					<div class="video-list zero-carousel" id="zero-carousel">
+						<div class="index-logo">
+							<img src="./image/banner/LOGO.png"><br>
+							<span>音视频能力解决方案提供商</span>
+						</div>
+						<div class="play-btn"></div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="video-list first-carousel" id="first-carousel">
+						<div class="product-container">
+							<h1>AnyChat三大产品体系</h1>
+
+							<p>AnyChat标准产品、AnyChat服务集群、<br>AnyChat视频云平台</p>
+							<a href="http://www.anychat.cn" target="_blank">查看详情</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<a href="http://www.bairuitech.com/News/dongtai/145613.html" target="_blank">
+						<div class="video-list second-carousel" id="second-carousel">
+							<div class="content-container">
+								<h1 class="content-title">AnyChat视频能力平台</h1>
+
+								<h1><span>获得</span><span class="authentication">安全等级三级认证</span></h1>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<!-- Controls -->
+			<a class="prev carousel-control" href="#video-carousel" role="button" data-slide="prev"></a>
+			<a class="next carousel-control" href="#video-carousel" role="button" data-slide="next"></a>
+		</div>
+	</div>
+	<!-- }图片轮播 -->
+	<div class="video-carousel-wrapm">
+		<div id="video-carouselm" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#video-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#video-carousel" data-slide-to="1"></li>
+				<li data-target="#video-carousel" data-slide-to="2"></li>
+				<!--<li data-target="#video-carousel" data-slide-to="3"></li>-->
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<a href="http://sdk.anychat.cn/html/case.html" target="_blank">
+						<div class="video-list negative-carouselm" id="nagative-carouselm">
+							<!--<div class="double-record-container first">-->
+							<!--<img src="./image/double-record/banner-left.png">-->
+							<!--</div>-->
+							<!--<div class="double-record-container second">-->
+							<!--<img src="./image/double-record/banner-right.png">-->
+							<!--</div>-->
+						</div>
+					</a>
+				</div>
+				<div class="item">
+					<div class="video-list zero-carouselm" id="zero-carouselm">
+						<!--<div class="index-logo">-->
+						<!--<img src="./image/banner/LOGO.png"><br>-->
+						<!--<span>音视频能力解决方案提供商</span>-->
+						<!--</div>-->
+						<!--<div class="play-btn"></div>-->
+					</div>
+				</div>
+				<div class="item">
+					<div class="video-list first-carouselm" id="first-carouselm">
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- AnyChat产品介绍{ -->
+		<div class="anychat container container-fluid" id="forPC1">
+			<div class="normal-title">AnyChat</div>
+			<div class="normal-info">一站式音视频生态系统解决方案</div>
+			<div class="blue-triangle"></div>
+
+			<div class="grid-wrap row">
+				<div class="grid">
+					<a href="./product.html#video" target="_blank" class="grid-icon av-conn"></a>
+
+					<div class="text-info">音视频通信</div>
+				</div>
+				<div class="grid">
+					<a href="./product.html#cross-platform" target="_blank" class="grid-icon cs-conn"></a>
+
+					<div class="text-info">跨平台通信</div>
+				</div>
+				<div class="grid">
+					<a href="./product.html#record" target="_blank" class="grid-icon av-record"></a>
+
+					<div class="text-info">音视频录制</div>
+				</div>
+				<div class="grid">
+					<a href="./product.html#DataCommunicate" target="_blank" class="grid-icon data-conn"></a>
+
+					<div class="text-info">数据通信</div>
+				</div>
+			</div>
+			<div class="grid-wrap">
+				<div class="grid">
+					<a href="./product.html#opening" target="_blank" class="grid-icon all-open"></a>
+
+					<div class="text-info">全方位开放</div>
+				</div>
+				<div class="grid">
+					<a href="./product.html#safe-reliable" target="_blank" class="grid-icon safe-reliable"></a>
+
+					<div class="text-info">安全可靠</div>
+				</div>
+				<div class="grid">
+					<a href="./product.html#morefunc" target="_blank" class="grid-icon more-func"></a>
+
+					<div class="text-info">更丰富功能</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="anychat container" id="forMobile1">
+			<div class="normal-title">AnyChat</div>
+			<div class="normal-info">一站式音视频生态系统解决方案</div>
+			<div class="blue-triangle"></div>
+
+			<div class="grid-wrap">
+				<div class="icon-wrap" id="icon-1">
+					<a href="./product.html#video" target="_blank" class="grid-icon1 icon-bg"></a>
+
+					<div class="text-info">音视频通信</div>
+				</div>
+				<div class="icon-wrap">
+					<a href="./product.html#cross-platform" target="_blank" class="grid-icon1 icon-bg"
+					   id="icon-bg1"></a>
+
+					<div class="text-info">跨平台通信</div>
+				</div>
+				<div class="icon-wrap">
+					<a href="./product.html#record" target="_blank" class="grid-icon1 icon-bg" id="icon-bg2"></a>
+
+					<div class="text-info">音视频录制</div>
+				</div>
+				<div class="icon-wrap">
+					<a href="./product.html#record" target="_blank" class="grid-icon1 icon-bg" id="icon-bg3"></a>
+
+					<div class="text-info">数据通信</div>
+				</div>
+
+			</div>
+			<div class="grid-wrap">
+				<div class="icon-wrap" id="icon-2">
+					<a href="./product.html#video" target="_blank" class="grid-icon1 icon-bg" id="icon-bg4"></a>
+
+					<div class="text-info">全方位开放</div>
+				</div>
+				<div class="icon-wrap">
+					<a href="./product.html#cross-platform" target="_blank" class="grid-icon1 icon-bg"
+					   id="icon-bg5"></a>
+
+					<div class="text-info">安全可靠</div>
+				</div>
+
+				<div class="icon-wrap">
+					<a href="./product.html#record" target="_blank" class="grid-icon1 icon-bg" id="icon-bg6"></a>
+
+					<div class="text-info">更丰富功能</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--&lt;!&ndash; }AnyChat产品介绍 &ndash;&gt;-->
+
+		<!--&lt;!&ndash; 资讯{ &ndash;&gt;-->
+		<div class="news container container-fluid" id="newsPC">
+			<div class="white-title">新闻资讯</div>
+			<div class="white-info">News</div>
+			<div class="white-triangle"></div>
+			<div class="news-body row">
+				<div class="news-img hidden-xs"></div>
+				<div class="news-list">
+					<div class="news-item" data-type="news" data-link="/News/dongtai/91834.html">
+						<div class="item-left">
+							<div class="date-day">20</div>
+							<div class="date-year-month">2017.02</div>
+						</div>
+						<div class="item-right">
+							<div class="news-title">AnyChat研发团队2017新年会议圆满落幕</div>
+						</div>
+					</div>
+					<div class="news-item" data-type="news" data-link="/News/dongtai/15925.html">
+						<div class="item-left">
+							<div class="date-day">17</div>
+							<div class="date-year-month">2017.01</div>
+						</div>
+						<div class="item-right">
+							<div class="news-title">AnyChat喜获国家三级应用安全等级认证</div>
+						</div>
+					</div>
+					<div class="news-item" data-type="news" data-link="/News/dongtai/16274.html">
+						<div class="item-left">
+							<div class="date-day">21</div>
+							<div class="date-year-month">2016.12</div>
+						</div>
+						<div class="item-right">
+							<div class="news-title">佰锐科技2017年春节放假安排</div>
+						</div>
+					</div>
+					<div class="news-item" data-type="news" data-link="/News/dongtai/18634.html">
+						<div class="item-left">
+							<div class="date-day">19</div>
+							<div class="date-year-month">2016.12</div>
+						</div>
+						<div class="item-right">
+							<div class="news-title">AnyChat服务集群 助力互联网金融创</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<a class="see-more" href="./news/dongtai/newslist_1.html">
+				MORE
+				<span></span>
+			</a>
+		</div>
+		<div class="newsMobile">
+
+		</div>
+		<!--&lt;!&ndash; }资讯 &ndash;&gt;-->
+
+		<!--&lt;!&ndash; 解决方案{ &ndash;&gt;-->
+		<div class="solution container">
+			<div class="normal-title">解决方案</div>
+			<div class="normal-info">Solution</div>
+			<div class="blue-triangle"></div>
+			<div class="solution-carousel-box">
+				<div class="solution-carousel-wrap">
+
+					<div id="solution-carousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#solution-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#solution-carousel" data-slide-to="1"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active" >
+								<a href="./solution.html#counter-record" target="_blank" class="solution-list">
+									<img src="./image/counterrecord.png" alt="柜台双录系统">
+
+									<div class="solution-bg"></div>
+									<div class="solution-info">柜台双录系统</div>
+								</a>
+								<a href="./solution.html#remote-health" target="_blank" class="solution-list">
+									<img src="./image/remote-health.png" alt="远程医疗">
+
+									<div class="solution-bg"></div>
+									<div class="solution-info">远程医疗</div>
+								</a>
+								<a href="./solution.html#video-edu" target="_blank" class="solution-list">
+									<img src="./image/remote-edu.png" alt="在线视频教育">
+
+									<div class="solution-bg"></div>
+									<div class="solution-info">在线视频教育</div>
+								</a>
+								<a href="./solution.html#video-acount" target="_blank" class="solution-list  last">
+									<img src="./image/remote-account.png" alt="在线视频开户">
+
+									<div class="solution-bg"></div>
+									<div class="solution-info">在线视频开户</div>
+								</a>
+							</div>
+							<div class="item">
+								<a href="./solution.html#video-c-service" target="_blank" class="solution-list">
+									<img src="./image/video-customer-service.png" alt="视频客服">
+
+									<div class="solution-bg"></div>
+									<div class="solution-info">视频客服</div>
+								</a>
+								<a href="./solution.html#video-edu" target="_blank" class="solution-list">
+									<img src="./image/remote-edu.png" alt="在线视频教育">
+
+									<div class="solution-bg"></div>
+									<div class="solution-info">在线视频教育</div>
+								</a>
+								<a href="./solution.html#video-acount" target="_blank" class="solution-list">
+									<img src="./image/remote-account.png" alt="在线视频开户">
+
+									<div class="solution-bg"></div>
+									<div class="solution-info">在线视频开户</div>
+								</a>
+								<a href="./solution.html#counter-record" target="_blank" class="solution-list last">
+									<img src="./image/counterrecord.png" alt="柜台双录系统">
+
+									<div class="solution-bg"></div>
+									<div class="solution-info">柜台双录系统</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!--&lt;!&ndash; }解决方案 &ndash;&gt;-->
+
+				<!--&lt;!&ndash; 关于{ &ndash;&gt;-->
+				<div class="about container" id="aboutForPC">
+					<div class="white-title">关于佰锐</div>
+					<div class="white-info">About BaiRuiTech</div>
+					<div class="white-triangle"></div>
+					<p class="f-paragraph">
+						佰锐科技始创于2005年，总部位于广州，拥有12年音视频核心技术应用开发、基础数据通信能力研究经验，旗下产品AnyChat作为一站式音视频能力生态系统解决方案，广泛应用于金融、证券、医疗、教育、智能设备、移动互联网、物联网行业，获得了各界用户一致好评！</p>
+
+					<p class="s-paragraph">未来，佰锐科技将以AnyChat产品为基础，不断推陈出新，将音视频的创新成果深度应用于各行业，全面开启"音视频+"的新时代。</p>
+					<a class="see-more" href="./about.html">
+						MORE
+						<span></span>
+					</a>
+				</div>
+
+				<div id="aboutForMobile">
+					<div class="white-titlem">关于佰锐</div>
+					<div class="white-infom">About BaiRuiTech</div>
+					<div class="white-trianglem"></div>
+					<p class="f-paragraphm">
+						佰锐科技始创于2005年，总部位于广州，拥有12年音视频核心技术应用开发、基础数据通信能力研究经验，旗下产品AnyChat作为一站式音视频能力生态系统解决方案，广泛应用于金融、证券、医疗、教育、智能设备、移动互联网、物联网行业，获得了各界用户一致好评！
+					</p>
+
+					<p class="f-paragraphm">未来，佰锐科技将以AnyChat产品为基础，不断推陈出新，将音视频的创新成果深度应用于各行业，全面开启"音视频+"的新时代。</p>
+					<a class="see-more" style="margin-top: 50px" href="./about.html">
+						MORE
+						<span></span>
+					</a>
+				</div>
+				<!--&lt;!&ndash; }关于 &ndash;&gt;-->
+
+				<!--&lt;!&ndash; 热点技术{ &ndash;&gt;-->
+
+				<!--&lt;!&ndash; }热点技术&ndash;&gt;-->
+
+				<div class="tech container">
+					<div class="normal-title">热点技术</div>
+					<div class="normal-info">Hot Technology</div>
+					<div class="blue-triangle"></div>
+					<div class="tech-list">
+						<div class="row">
+							<div class="tech-item col-sm-12 col-lg-6">
+								<div class="li-icon"></div>
+								<a href="http://bbs.anychat.cn/forum.php?mod=viewthread&tid=193&extra=page%3D1"
+								   target="_blank">AnyChat论坛精华贴归纳汇总列表</a></div>
+
+							<div class="tech-item col-sm-12 col-lg-6">
+								<div class="li-icon"></div>
+								<a href="http://bbs.anychat.cn/forum.php?mod=viewthread&tid=331&extra=page%3D1"
+								   target="_blank">AnyChat服务器压力测试现场视频</a></div>
+							<div class="tech-item col-sm-12 col-lg-6">
+								<div class="li-icon"></div>
+								<a href="http://bbs.anychat.cn/forum.php?mod=viewthread&tid=1132&extra=page%3D1"
+								   target="_blank">AnyChat音视频录制整体解决方案</a></div>
+							<div class="tech-item col-sm-12 col-lg-6">
+								<div class="li-icon"></div>
+								<a href="http://bbs.anychat.cn/forum.php?mod=viewthread&tid=1771&highlight=%C5%C5%B6%D3"
+								   target="_blank">AnyChat业务排队整体解决方案</a></div>
+							<div class="tech-item col-sm-12 col-lg-6">
+								<div class="li-icon"></div>
+								<a href="http://bbs.anychat.cn/forum.php?mod=viewthread&tid=8&extra=page%3D1"
+								   target="_blank">AnyChat独立部署Windows视频服务器攻略</a></div>
+							<div class="tech-item col-sm-12 col-lg-6">
+								<div class="li-icon"></div>
+								<a href="http://bbs.anychat.cn/forum.php?mod=viewthread&tid=12&extra=page%3D1"
+								   target="_blank">AnyChat平台用户身份验证与第三方平台集成</a></div>
+						</div>
+
+					</div>
+					<a class="see-more" href="http://bbs.anychat.cn/forum.php?mod=forumdisplay&fid=37" target="_blank"/>
+					MORE
+					<span></span>
+					</a>
+				</div>
+
+
+				<!--&lt;!&ndash; 合作伙伴{ &ndash;&gt;-->
+				<div class="partner container">
+					<div class="solution-carousel-box" id="bottomSlide">
+
+						<div class="normal-title" id="normal-titlem">合作伙伴</div>
+						<div class="normal-info" id="normal-infom">Partner</div>
+						<div class="blue-triangle"></div>
+						<div class="partner-carousel-wrap carousel-inner1">
+							<div id="partner-carousel" class="carousel slide" data-ride="carousel">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#partner-carousel" data-slide-to="0" class="active"></li>
+									<li data-target="#partner-carousel" data-slide-to="1"></li>
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<div class="partner-img">
+											<img src="./image/partners/tsing_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/coas_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/wicresoft_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/jzgf_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/hundsun_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/king_star_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/thinkive_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/cairen_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/middle_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/shine_hover.png">
+										</div>
+									</div>
+									<div class="item">
+										<div class="partner-img">
+											<img src="./image/partners/beyond_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/intasect_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/ylz_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/digital_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/santal_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/apex_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/institute_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/wealth_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/fortune_hover.png">
+										</div>
+										<div class="partner-img">
+											<img src="./image/partners/intasects_hover.png">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--&lt;!&ndash; }合作伙伴&ndash;&gt;-->
+
+				<!--</div>-->
+
+				<!--&lt;!&ndash;footer&ndash;&gt;-->
+				<div id="footerm">
+					<div class="qr-code row hidden-xs">
+						<div class="qr-like-wrap col-md-4 col-sm-6 col-xs-12">
+							<p>AnyChat 体验程序</p>
+
+							<p>iOS/Android下载</p>
+							<img src="./image/qr-download.png">
+						</div>
+						<div class="qr-download-wrap col-md-4 col-sm-6 col-xs-12">
+							<p>扫一扫！关注我们</p>
+
+							<p>微信公众号</p>
+							<img src="./image/qr-like.png">
+						</div>
+					</div>
+					<ul class="foot-nav foot-nav_mobile row">
+						<li>
+							<a href="/copyrightstatement.html" target="_blank">法律声明</a>
+						</li>
+						<li>
+							<a href="/about.html#about-br" target="_blank">公司介绍</a>
+						</li>
+						<li>
+							<a href="/about.html#company-culture" target="_blank">企业文化</a>
+						</li>
+						<li>
+							<a href="/about.html#join-us" target="_blank">加入佰锐</a>
+						</li>
+						<li>
+							<a href="/about.html#map-wrap" target="_blank">联系我们</a>
+						</li>
+					</ul>
+					<div>广州佰锐网络科技有限公司 2005-2017。 <br/> <br/>粤ICP备13022410号-2</div><br/>
+					<div>公司地址：广州市天河区天河软件园建工路9号309-310室；<br/> <br/>咨询电话：020-85276986</div>
+				</div>
+
+				<div id="footer">
+					<div class="qr-code">
+						<div class="qr-like-wrap">
+							<p>AnyChat 体验程序</p>
+
+							<p>iOS/Android下载</p>
+							<img src="./image/qr-download.png">
+						</div>
+						<div class="qr-download-wrap">
+							<p>扫一扫！关注我们</p>
+
+							<p>微信公众号</p>
+							<img src="./image/qr-like.png">
+						</div>
+					</div>
+					<div id="footerUlContainer">
+						<ul class="foot-nav" id="footerUl">
+							<li><a href="/copyrightstatement.html" target="_blank">法律声明</a></li>
+							<li><a href="/about.html#about-br" target="_blank">公司介绍</a></li>
+							<li><a href="/about.html#company-culture" target="_blank">企业文化</a></li>
+							<li><a href="/about.html#join-us" target="_blank">加入佰锐</a></li>
+							<li><a href="/about.html#map-wrap" target="_blank">联系我们</a></li>
+						</ul>
+					</div>
+					<div>广州佰锐网络科技有限公司 2005-2017。粤ICP备13022410号-2</div>
+					<div id="footerPC">公司地址：广州市天河区天河软件园建工路9号309-310室;咨询电话：020-85276986</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="http://resource.bcevod.com/player/cyberplayer.js"></script>
+<script src="./js/index.js"></script>
+<script>
+	window.onload = function () {
+		console.log('success')
+
+		function isPC() {
+			var userAgentInfo = navigator.userAgent;
+			var Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+			var flag = true;
+			for (var v = 0; v < Agents.length; v++) {
+				if (userAgentInfo.indexOf(Agents[v]) > 0) {
+					flag = false;
+					break;
+				}
+			}
+			return flag;
+		}
+
+		if (!isPC()) {
+			$('#logo').addClass('i-logo');
+			$('#forPC-carousel').hide();
+			$('#forPC1').hide();
+			$('#newsPC').hide();
+			$('#aboutForPC').hide();
+			$('#footer').hide();
+			$('#tech-list').removeClass('tech-list');
+			$('#normal-titlem').addClass('normal-titlem');
+			$('#normal-titlem1').addClass('normal-titlem');
+			$('#normal-infom').addClass('normal-infom');
+			$('#techForPC').hide();
+
+		} else {
+			$('#video-carouselm').hide();
+//            document.getElementById('forMobile-carousel').style.display='none';
+			$('#newsPC').show();
+			$('#forMobile1').hide();
+			$('#aboutForMobile').hide();
+
+			$('.video-list').css({
+				"height": "100vh"
+			});
+			$('#footerm').hide();
+		}
+	}
+</script>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+html {
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+}
+#header {
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #bbb;
+}
+#main {
+    min-height: 100vh;
+}
+.pages a {
+    text-decoration: none;
+}
+.logob .pages a {
+    color: #000;
+}
+.logob .logo {
+    background: url(../image/LOGOB.png) no-repeat;
+}
+.logob .pages a {
+    color: #000;
+}
+.logob .nav-wrap .now,.logob .pages:hover {
+    border-bottom: 2px solid rgb(20,145,237);
+}
+.nav-wrap {
+    width: 800px;
+    height: 70px;
+    color: #fff;
+    margin: 0 auto;
+}
+.nav-wrap .logo {
+    float: left;
+    width: 180px;
+    height: 55px;
+    margin-top: 7px;
+    background-size: 100% 100%;
+}
+.nav-wrap .nav {
+    float: right;
+    height: 80px;
+}
+.nav-wrap .pages {
+    float: left;
+    height: 35px;
+    margin: 20px 30px 0 0;
+    line-height: 30px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+#main {
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+#footer {
+    padding-bottom: 10px;
+    background-color: #111;
+}
+#footer > div {
+    text-align: center;
+    color: #fff;
+}
+.foot-nav {
+    margin-bottom: 10px;
+    padding: 10px 0 0;
+    text-align: center;
+}
+.foot-nav li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+.foot-nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+.qr-code {
+    height: 220px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #333;
+}
+.qr-code > div {
+    display: inline-block;
+}
+.qr-code p {
+    color: #fff;
+    margin: 10px 0;
+    text-align: center;
+}
+.qr-like-wrap {
+    margin-right: 150px;
+}
+
+.news-bg {
+    width: 100%;
+    height: 300px;
+    background: url(../image/news-nav.png) no-repeat;
+    background-size: auto 100%;
+}
+.main-body {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.main-table {
+    width: 100%;
+    min-height: 100vh;
+}
+.main-left {
+    width: 180px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: rgb(249, 253, 255);
+    vertical-align: top;
+    padding-top: 30px;
+}
+.main-right {
+    width: 900px;
+    padding-left: 29px;
+    vertical-align: top;
+}
+.body-left > div:first-child {
+    border-top: 1px solid #ccc;
+}
+.nav-list {
+    display: block;
+    cursor: pointer;
+    text-decoration: none !important;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.nav-list.now {
+    color: #fff;
+    background-color: rgb(0, 160, 234);
+    border: none;
+}
+.news-bread {
+    margin-left: -30px;
+    padding-left: 20px;
+    height: 45px;
+    color: grey;
+    line-height: 45px;
+    border-bottom: 1px solid #ccc;
+}
+.news-bread > span > a {
+    color: grey;
+    text-decoration: none;
+}
+.news-bread .now {
+    color: rgb(0, 160, 234);
+}
+.news-list {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+    overflow: hidden;
+}
+.news-list[data-link] {
+    cursor: pointer;
+}
+.news-icon {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 4px 5px 0 0;
+    background: url(../image/news-icon.png) no-repeat;
+    background-size: auto 100%;
+}
+.news-content {
+    float: left;
+    width: 840px;
+}
+.news-header {
+    height: 40px;
+}
+.news-title {
+    height: 40px;
+    width: 660px;
+    float: left;
+    font-size: 18px;
+    overflow: hidden;
+}
+.news-date {
+    height: 40px;
+    font-size: 12px;
+    color: grey;
+    float: right;
+    line-height: 45px;
+}
+.news-article {
+    max-height: 60px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.article-content-wrap h3 {
+    text-align: center;
+    color: rgb(0, 160, 234);
+}
+.at-date {
+    text-align: center;
+    font-size: 10px;
+    padding: 0 20px 20px 0;
+    /*border-bottom: 1px solid #ccc;*/
+}
+.at-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h2 {
+    color: #0053B3;
+    float: none;
+    padding: 0;
+    text-align: center;
+}
+.pagination {    
+    width: 870px;
+    text-align: right;
+}
+.pagination .fr {
+    line-height: 26px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #666;
+}
+.fr {
+    float: right;
+}
+.pagesNav {
+    line-height: 22px;
+    float: right;
+    font-family: "Microsoft Yahei";
+}
+.pagesNav .cur {
+    color: #FFF;
+    text-decoration: none;
+    border: 1px solid #3b5998;
+    background-color: #3b5998;
+    cursor: default;
+}
+.pagesNav a, .pagesNav span {
+    display: inline-block;
+    min-width: 30px;
+    _width: 18px;
+    height: 28px;
+    line-height: 26px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Arial";
+    margin-right: 5px;
+    margin-left: -1px;
+    vertical-align: top;
+}
+.pagesNav span.gopage {
+    _width: 110px;
+    border: 1px solid #ccd3e4;
+    padding: 0 0 0 5px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.pagesNav span.gopage input {
+    margin: 4px 2px 0 0;
+    border: 1px solid;
+    border-color: #ccd3e4 #CCD3E4;
+    padding: 0;
+    width: 40px;
+    height: 16px;
+    line-height: 16px;
+    color: #666;
+    text-align: center;
+    font-size: 12px;
+}
+.pagesNav a.afpage:link, .pagesNav a.afpage:visited {
+    background-position: -84px -78px;
+    color: #fff;
+}
+.pagesNav a.afpage {
+    background-color: #3b5998;
+    border: 1px solid #3b5998;
+    color: #FFF;
+    padding: 0 20px 0 10px;
+    _width: 42px;
+}
+.pagesNav a:link, .pagesNav a:visited {
+    color: #3b5998;
+    text-decoration: none;
+    border: 1px solid #ccd3e4;
+    background-color: #fafbfc;
+}
+.organization
+{
+    font-size: 14px;
+    text-align: right;
+    color: #6a6a6a;
+    border-top: 1px #BAC6D8 dotted;
+    margin-top: 20px;
+    padding: 10px 0px;
+}
+.laws-list li {
+    font-size: 14px;
+    color: #6A6A6A;
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+    padding-left: 10px;
+}

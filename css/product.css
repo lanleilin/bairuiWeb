@@ -1,0 +1,205 @@
+.title-banner {
+  width: 100%;
+  height: 9.24rem;
+}
+.title-banner {
+  font-size: 1.2rem !important;
+  text-align: center;
+  font-weight: normal;
+}
+.text-first-item {
+  font-size: 0.44rem;
+  line-height: 0.88rem;
+  padding: 0 0.3rem 0 0.3rem;
+}
+.text-first-item:first-letter {
+  font-size: 1.44rem;
+  float: left;
+  line-height: 0.88rem;
+  padding: 0.4rem 0.2rem 0 0;
+}
+#title {
+  width: 100%;
+  text-align: center;
+}
+.row {
+  margin: 0 auto;
+}
+.p-banner h3 {
+  color: #0f89ea !important;
+}
+.p-name {
+  width: 12.64rem;
+  height: 5rem;
+  background: #ffffff;
+  margin-left: 1.56rem;
+  margin-bottom: 0.56rem;
+}
+#icon4 {
+  height: 6.4rem;
+}
+.icon_wb1 {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: transparent url(../image/product/AnyChatSDK/features_wb1.png) no-repeat;
+  float: left;
+}
+.icon-1 {
+  background-position: -0.16rem -0.16rem;
+  margin: 0.56rem;
+}
+.p-subTitle {
+  font-size: 0.8rem !important;
+  color: #363636;
+  width: 10rem;
+  padding: 0.8rem 0 0.2rem 0.1rem;
+}
+.p-subPara {
+  font-size: 0.44rem;
+  padding: 0 0.2rem 0 0.4rem;
+}
+.vertical-size1 {
+  margin-bottom: 9px;
+  text-align: center;
+}
+.event {
+  padding: 90px 0 100px 0;
+  width: 100%;
+  max-width: 1300px;
+  min-width: 100px;
+  margin: 0 auto;
+}
+.event p {
+  padding: 1.16rem;
+}
+.event h2 {
+  color: 373737;
+}
+.column-2 .vertical-size2 {
+  width: 48%;
+  padding: 0 1%;
+}
+.column-2 .vertical-size2 h3 {
+  font-weight: normal;
+  color: #0d0d0d;
+}
+.event p {
+  padding: 0rem;
+  text-align: center !important;
+}
+#cross-platform {
+  padding: 0.04rem 0.4rem;
+  font-size: 0.24rem !important;
+}
+.anychat-cross-platform .flow .column {
+  width: 12%;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+#record {
+  font-size: 0.24rem;
+  padding-left: 0.2rem;
+}
+.recordAddh3 {
+  color: #ffffff !important;
+  font-weight: normal;
+  font-size: 0.6rem !important;
+}
+.recordAddp {
+  color: #ffffff !important;
+  font-weight: normal;
+  font-size: 0.32rem !important;
+}
+.anychat-record .separate-line {
+  margin-bottom: 5px;
+}
+.anychat-record .mode-column .column .item-3 {
+  margin-left: -55px;
+  width: 121px;
+  height: 70px;
+  background-position: -261px -13px;
+}
+.event {
+  padding: 90px 0 10px 0;
+  width: 100%;
+  max-width: 1300px;
+  min-width: 100px;
+  margin: 0 auto;
+}
+.event h2 {
+  text-align: center;
+}
+#forMobile {
+  clear: both !important;
+}
+#opening1 {
+  clear: both !important;
+}
+#opening1 {
+  padding-bottom: 10px;
+  background-color: #111;
+  margin-top: 18rem;
+}
+.vertical-size2 h3 {
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+#opening1 {
+  text-align: center;
+  color: #ffffff;
+}
+.safeReliableInfo {
+  background: #ffffff !important;
+}
+.safeReliableInfo img {
+  width: 100%;
+}
+.safeReliableInfo h3 {
+  color: #444444;
+}
+.event {
+  padding: 30px 0 10px 0;
+  width: 100%;
+  max-width: 1300px;
+  min-width: 100px;
+  background: #ffffff !important;
+  margin: 0 auto;
+}
+.event h2 {
+  text-align: center;
+  color: #444444;
+}
+.leftSide {
+  width: 55%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+.rightSide {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  clear: both;
+}
+.rightSide div {
+  width: 45%;
+  float: left;
+  margin: 0.2rem;
+}
+.p-morefunc h3 {
+  color: #ffffff !important;
+}
+.p-morefunc div {
+  padding: 0;
+}
+.p-banner {
+  height: 15.24rem;
+  overflow: hidden;
+}
+.title-bannerm {
+  padding: 0;
+}

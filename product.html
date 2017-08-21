@@ -1,0 +1,673 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="gb2312">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>佰锐科技_产品</title>
+    <meta name="keywords" content="AnyChat SDK,音视频开发包"/>
+    <meta name="description" content="实时音视频交互，音频技术，视频技术，P2P技术，跨平台互联互通，回音消除、噪音抑制，文件传输，音视频录制、IP组播，双机热备，开放接口"/>
+    <link rel="Stylesheet" href="./css/product.css"/>
+    <link rel="stylesheet" href="./css/global.css">
+    <link href='http://www.youziku.com/webfont/CSS/c6331a578e2a80d49354ac170844016a' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="./css/AnyChatSDK.css">
+    <link rel="Stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="Stylesheet" href="./css/product.css"/>
+
+    <!-- <script src="http://a.tbcdn.cn/??s/kissy/1.3.0/kissy-min.js"></script> -->
+    <style type="text/css">
+        .iNav {
+            padding-left: 28% !important;
+            background: rgba(0, 0, 0, 0.9) !important;
+        }
+
+        .iNav a {
+            color: white !important;
+            z-index: 500 !important;
+            background: none;
+
+        }
+
+        .now {
+            border-bottom: 2px solid #FFFFFF !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: white;
+            border: none !important;
+            z-index: 100 !important;
+
+        }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            /*background-color: #888;*/
+            background-color: white !important;
+        }
+
+        .navbar {
+            position: relative;
+            min-height: 70px !important;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            margin-bottom: 0 !important;
+
+        }
+
+        .nav > li {
+            position: relative;
+            display: block;
+            margin-top: 15px !important;
+        }
+
+        .navbar-default .navbar-toggle:focus,
+        .navbar-default .navbar-toggle:hover {
+            background-color: transparent;
+        }
+
+        #logo {
+            z-index: 200 !important;
+        }
+
+        .navbar-brand > img {
+            display: block;
+            z-index: 100;
+            position: absolute;
+            left: 10% !important;
+        }
+
+        .navbar-header {
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        (function () {
+            function isPC() {
+                var userAgentInfo = navigator.userAgent;
+                var Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+                var flag = true;
+                for (var v = 0; v < Agents.length; v++) {
+                    if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                        flag = false;
+                        break;
+                    }
+                }
+                return flag;
+            }
+
+            if (!isPC()) {
+                var html = document.documentElement;
+                var hWidth = html.getBoundingClientRect().width;
+                html.style.fontSize = hWidth / 15 + "px";
+            } else {
+                var html = document.documentElement;
+                var hWidth = html.getBoundingClientRect().width;
+                html.style.fontSize = hWidth / 25 + "px";
+            }
+            ;
+
+        })();
+    </script>
+</head>
+<body>
+<!-- 头部{ -->
+<!--<div id="header-cover"></div>-->
+<nav class="navbar navbar-default iNav">
+    <div class="container-fluid">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="logo" class="navbar-brand" href="#">
+                <img src="image/LOGOW.png"/>
+            </a>
+            <!--<div class="logo navbar-brand"></div>-->
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html">首页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                    <a href="#">新闻资讯</a>
+                </li>
+                <li>
+                    <a class="now" href="#">产品</a>
+                </li>
+                <li>
+                    <a href="#">解决方案</a>
+                </li>
+                <li>
+                    <a href="#">关于我们</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<!-- }头部 -->
+
+<!--&lt;!&ndash;banner start&ndash;&gt;-->
+<!--<div class="body container-fluid">-->
+<!--<div class="banner row">-->
+<!--<div class="event-img col-xs-12">-->
+<!--<a href="http://www.anychat.cn" target="_blank">-->
+<!--<h2 class="title-banner">AnyChat<br/>-->
+<!--让你的视界更精彩-->
+<!--</h2>-->
+<!--</a>-->
+
+<!--<div class="mod-label col-xs-12">-->
+<!--<div class="line"><span>一站式音视频生态系统解决方案</span></div>-->
+<!--</div>-->
+<!--<p class="text-first-item col-xs-12">-->
+<!--通过封装音视频编解码、流媒体处理以及P2P等专业复杂技术，为上层应用提供简单的API控制接口，实现一对一、一对多的实时音视频交互、文件传输、透明通道、音视频录制、业务排队等功能。在移动互联网、物联网、在线教育、远程医疗、视频客服以及智能家居等业务领域拥有广泛的应用空间。-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash;banner end&ndash;&gt;-->
+<!--banner start-->
+<div class="body ">
+    <div class="banner" id="p-banner">
+        <div class="event-img">
+            <a href="http://www.anychat.cn" target="_blank">
+                <h2 class="title-banner" id="title-bannerm">AnyChat<br/>
+                    让你的视界更精彩
+                </h2>
+            </a>
+
+            <div class="mod-label">
+                <div class="line"><span>一站式音视频生态系统解决方案</span></div>
+            </div>
+            <p class="text-first-item">
+                通过封装音视频编解码、流媒体处理以及P2P等专业复杂技术，为上层应用提供简单的API控制接口，实现一对一、一对多的实时音视频交互、文件传输、透明通道、音视频录制、业务排队等功能。在移动互联网、物联网、在线教育、远程医疗、视频客服以及智能家居等业务领域拥有广泛的应用空间。
+            </p>
+        </div>
+    </div>
+    <!--banner end-->
+
+    <div class="container-fluid p-banner">
+        <div>
+            <div id="title">
+                <h2>产品核心竞争力</h2>
+            </div>
+            <div class="row">
+                <a href="#video" class="col-lg-4 col-md-4 col-xs-12">
+                    <h3>音视频通信</h3>
+
+                    <p>采用和优化H.264视频编解码<br/>
+                        AAC音频编码标准与P2P技术
+                    </p>
+                </a>
+                <a href="#cross-platform" class="col-lg-4 col-md-4 col-xs-12">
+                    <h3>跨平台</h3>
+
+                    <p>服务器支持Windows、Linux、Unix系统<br/>
+                        客户端支持Windows、Web、Android、iOS、Linux系统</p>
+                </a>
+                <a href="#record" class="col-lg-4 col-md-4 col-xs-12">
+                    <h3>全景录像</h3>
+
+                    <p>支持单方、双方的音视频录制<br/>
+                        实现本地、服务器合成及合成流录制</p>
+                </a>
+            </div>
+            <div class="row">
+                <a href="#DataCommunicate" class="col-md-3 col-xs-12">
+                    <h3>数据传输</h3>
+
+                    <p>支持文件传输<br/>
+                        自定义指令的透明通道传输</p>
+                </a>
+                <a href="#opening" class="col-md-3 col-xs-12">
+                    <h3>全方位开放</h3>
+
+                    <p>提供服务器端、客户端SDK接口<br/>
+                        互相独立，适合二次自主开发</p>
+                </a>
+                <a href="#safe-reliable" class="col-md-3 col-xs-12">
+                    <h3>安全可靠</h3>
+
+                    <p>双机热备<br/>
+                        通信数据加密传输</p>
+                </a>
+                <a href="#morefunc" class="col-md-3 col-xs-12">
+                    <h3>更丰富功能</h3>
+
+                    <p>IP组播、文字聊天<br/>
+                        自定义第三方音视频编码输入</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--产品核心竞争力 end-->
+    <!--专业音视频 start-->
+    <div class="anychat-video" id="video" class="container-fluid">
+        <div class="event-img" class="row">
+            <div class="vertical-size1">
+                <h2>音视频通信</h2>
+
+                <p>承载数千客户的多形态音视频通信应用，12年技术积累值得信赖<br/>
+                    AnyChat将为您提供专业卓越的一站式音视频生态系统解决方案</p>
+            </div>
+            <div class="video-list column-2">
+                <div class="horizontal-size">
+                    <div class="icon_wb icon-1" title="实时音视频交互">&nbsp;</div>
+                    <!-- <img src="/image/sdk/iocn_03.png" alt="实时音视频交互"/> -->
+                    <div class="info">
+                        <div class="name">实时音视频交互</div>
+                        <p class="des">通过简单的API调用实现双方的语音交流，支持&ldquo;一对一&rdquo;、&ldquo;一对多&rdquo;以及&ldquo;多对多&rdquo;等多种模式的音频、视频交互。在交互过程中，上层应用可以控制只传音频，或只传视频，或是音视频同时传输</p>
+                    </div>
+                </div>
+                <div class="horizontal-size">
+                    <div class="icon_wb icon-2" title="P2P技术">&nbsp;</div>
+                    <!-- <img src="/image/sdk/iocn_04.png" alt="P2P技术"/> -->
+                    <div class="info">
+                        <div class="name">P2P技术</div>
+                        <p class="des">
+                            音视频数据优先采用P2P通道传输，不占用服务器带宽资源，节省运营成本，不会因为在线用户数太多而导致服务器的网络阻塞；主动防火墙穿越，建立NAT映射，支持UPNP协议</p>
+                    </div>
+                </div>
+                <div class="horizontal-size">
+                    <div class="icon_wb icon-3" title="网络服务质量Qos">&nbsp;</div>
+                    <!-- <img src="/image/sdk/iocn_08.png" alt="网络服务质量Qos"/> -->
+                    <div class="info">
+                        <div class="name">网络服务质量QoS</div>
+                        <p class="des">满足移动网络(4G、3G)、卫星、WiFi、ADSL、光纤、局域网等复杂网络环境下的音视频应用，抗丢包率达21%</p>
+                    </div>
+                </div>
+                <div class="horizontal-size">
+                    <div class="icon_wb icon-4" title="回音消除、噪音抑制">&nbsp;</div>
+                    <!-- <img src="/image/sdk/iocn_12.png" alt="回音消除、噪音抑制"/> -->
+                    <div class="info">
+                        <div class="name">回音消除、噪音抑制</div>
+                        <p class="des">
+                            AnyChat优化的音频信号处理算法，通过对实时采样的数字信号进行频谱分析，分析背景噪声响应的强度和频谱分布，通过滤波器，对背景噪声的频谱进行抑制，降低其能量，消除环境噪音和回声，实现全双工顺畅沟通</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--专业音视频 end-->
+    <!--专业音视频 start-->
+    <div class="anychat-video" id="video1" class="container-fluid">
+        <div class="event-img" class="row">
+            <div class="vertical-size1">
+                <h2>音视频通信</h2>
+
+            </div>
+            <div>
+                <div class="p-name">
+                    <div class="icon_wb1 icon-1" id="icon-1" title="实时音视频交互">&nbsp;</div>
+                    <!-- <img src="/image/sdk/iocn_03.png" alt="实时音视频交互"/> -->
+                    <div>
+                        <div class="p-subTitle">实时音视频交互</div>
+                        <p class="p-subPara">通过简单的API调用实现双方的语音交流，支持&ldquo;一对一&rdquo;、&ldquo;一对多&rdquo;以及&ldquo;多对多&rdquo;等多种模式的音频、视频交互。在交互过程中，上层应用可以控制只传音频，或只传视频，或是音视频同时传输</p>
+                    </div>
+                </div>
+                <div class="p-name">
+                    <div class="icon_wb1 icon-1" title="P2P技术">&nbsp;</div>
+                    <!-- <img src="/image/sdk/iocn_04.png" alt="P2P技术"/> -->
+                    <div>
+                        <div class="p-subTitle">P2P技术</div>
+                        <p class="p-subPara">
+                            音视频数据优先采用P2P通道传输，不占用服务器带宽资源，节省运营成本，不会因为在线用户数太多而导致服务器的网络阻塞；主动防火墙穿越，建立NAT映射，支持UPNP协议</p>
+                    </div>
+                </div>
+                <div class="p-name">
+                    <div class="icon_wb1 icon-1" title="网络服务质量Qos">&nbsp;</div>
+                    <!-- <img src="/image/sdk/iocn_08.png" alt="网络服务质量Qos"/> -->
+                    <div>
+                        <div class="p-subTitle">网络服务质量QoS</div>
+                        <p class="p-subPara">满足移动网络(4G、3G)、卫星、WiFi、ADSL、光纤、局域网等复杂网络环境下的音视频应用，抗丢包率达21%</p>
+                    </div>
+                </div>
+                <div class="p-name" id="icon4">
+                    <div class="icon_wb1 icon-1" title="回音消除、噪音抑制">&nbsp;</div>
+                    <!-- <img src="/image/sdk/iocn_12.png" alt="回音消除、噪音抑制"/> -->
+                    <div>
+                        <div class="p-subTitle">回音消除、噪音抑制</div>
+                        <p class="p-subPara">
+                            AnyChat优化的音频信号处理算法，通过对实时采样的数字信号进行频谱分析，分析背景噪声响应的强度和频谱分布，通过滤波器，对背景噪声的频谱进行抑制，降低其能量，消除环境噪音和回声，实现全双工顺畅沟通</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--专业音视频 end-->
+    <!--跨平台通信 start-->
+    <div class="anychat-cross-platform" id="cross-platform">
+        <div class="event">
+            <div class="vertical-size1">
+                <h2>跨平台通信</h2>
+
+                <p>AnyChat的跨平台特性，为客户提供了广阔的应用空间<br/>
+                    实现PC桌面程序、Web浏览器页面以及移动终端之间的音视频交互与数据通信<br/>
+                    同时，还可以定制嵌入式硬件解决方案，实现嵌入式硬件与AnyChat各平台互联互通</p>
+            </div>
+            <div class="cross-platform-list column-2">
+                <div class="vertical-size2 text-center">
+                    <h3>服务端支持平台</h3>
+
+                    <p class="text-left">AnyChat服务器端SDK可以支持Windows、Linux、Unix等所有主流服务器操作系统</p>
+                </div>
+                <div class="vertical-size2 text-center border-none">
+                    <h3>客户端支持平台</h3>
+
+                    <p class="text-left">
+                        AnyChat客户端SDK目前支持主流的操作系统与平台，包括：Windows、Web、Android（ARM、x86）、iOS（ARMv7、ARMv7s、ARM64）、Linux等，目前正在研发对Win
+                        Phone、Mac等平台的支持</p>
+                </div>
+            </div>
+            <div class="flow" id="p-flowPC">
+                <div class="column"><span class="item item-1"></span></div>
+                <div class="column"><span class="item item-2"></span></div>
+                <div class="column"><span class="item item-3"></span></div>
+                <div class="column"><span class="item item-4"></span></div>
+                <div class="column"><span class="item item-5"></span></div>
+                <div class="column"><span class="item item-6"></span></div>
+            </div>
+            <div class="flow" id="p-flowMB" class="forMobile">
+                <div class="column"><span class="item item-1"></span></div>
+                <div class="column"><span class="item item-2"></span></div>
+                <div class="column"><span class="item item-3"></span></div>
+                <div class="column"><span class="item item-4"></span></div>
+                <div class="column"><span class="item item-5"></span></div>
+                <div class="column"><span class="item item-6"></span></div>
+            </div>
+        </div>
+    </div>
+    <!--跨平台通信 end-->
+    <!--音视频录制 start-->
+    <div class="anychat-record" id="record">
+        <div class="event-img">
+            <div class="vertical-size1">
+                <h2>全景录像</h2>
+            </div>
+            <div class="record-list column-2">
+                <div class="separate-line">
+                    <div class="vertical-size2 text-center">
+                        <h3 id="p-h3">多种录制方式</h3>
+
+                        <p class="text-left">单个用户的音频、视频录制；通话双方的音频、视频合成录制。其中合成录制又可以分为客户端合成、服务器合成、合成流录制等，满足不同录制需求</p>
+                    </div>
+                    <div class="vertical-size2 text-center">
+                        <h3>满足各种录制需求</h3>
+
+                        <p class="text-left">开放服务器端录制API、客户端录制API，做到随心灵活开发应用；自主部署录像服务器、业务服务器，实现我的资源我做主</p>
+                    </div>
+                </div>
+                <div class="vertical-size2 text-center">
+                    <h3>录制参数及格式自定义</h3>
+
+                    <p class="text-left">自定义录制时的录制码率、视频分辩率；自定义录制视频格式，支持MP4（默认）、WMV、FLV、MP3等格式</p>
+
+                    <div class="file-column">
+                        <div class="column"><span class="item item-1"></span></div>
+                        <div class="column"><span class="item item-2"></span></div>
+                        <div class="column"><span class="item item-3"></span></div>
+                        <div class="column"><span class="item item-4"></span></div>
+                    </div>
+                </div>
+                <div class="vertical-size2 text-center">
+                    <h3>多种录制画面</h3>
+
+                    <p class="text-left">支持单用户录制、合成录制（画中画模式）、并列录制（左右对称模式）</p>
+
+                    <div class="mode-column">
+                        <div class="column"><span class="item item-1"></span></div>
+                        <div class="column"><span class="item item-2"></span></div>
+                        <div class="column"><span class="item item-3"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--&lt;!&ndash;音视频录制 end&ndash;&gt;-->
+    <!--&lt;!&ndash;数据通信 start&ndash;&gt;-->
+    <div class="anychat-DataCommunicate" id="DataCommunicate">
+        <div class="event">
+            <div class="vertical-size1">
+                <h2>数据通信</h2>
+
+                <p>&nbsp;</p>
+            </div>
+            <div class="DataCommunicate-list column-2">
+                <div class="horizontal-size">
+                    <div class="icon_b icon-5" title="文件传输">&nbsp;</div>
+                    <!-- <img src="/image/sdk/iocn_05.png" alt="文件传输"/> -->
+                    <div class="info">
+                        <div class="name">文件传输</div>
+                        <p class="des">
+                            为上层应用提供了文件传输的能力，可以实现客户端之间、客户端与服务器之间的文件传输，支持断点续传。文件传输过程中可实时查询传输进度、传输码率等信息，方便实现界面上的传输进度条，增强系统的用户体验。</p>
+                    </div>
+                </div>
+                <div class="horizontal-size">
+                    <div class="icon_b icon-6" title="文件传输">&nbsp;</div>
+                    <!-- <img src="/image/sdk/iocn_06.png" alt="透明通道"/> -->
+                    <div class="info">
+                        <div class="name">透明通道</div>
+                        <p class="des">
+                            为上层应用提供了数据传输的能力，支持客户端之间、服务器与客户端之间的缓冲区数据传输，传输的内容没有限制。上层应用可利用透明通道传输业务层自定义的指令，并进行对应的业务逻辑处理。</p>
+
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-name" class="forMobile" id="forMobile">
+        <div class="event">
+            <div>
+                <h2>数据通信</h2>
+
+                <p>&nbsp;</p>
+            </div>
+            <div>
+                <div>
+                    <div class="icon_wb1 icon-1" title="文件传输">&nbsp;</div>
+                    <!-- <img src="/image/sdk/iocn_05.png" alt="文件传输"/> -->
+                    <div>
+                        <div class="p-subTitle">文件传输</div>
+                        <p>
+                            为上层应用提供了文件传输的能力，可以实现客户端之间、客户端与服务器之间的文件传输，支持断点续传。文件传输过程中可实时查询传输进度、传输码率等信息，方便实现界面上的传输进度条，增强系统的用户体验。</p>
+                    </div>
+                </div>
+                <div class="horizontal-size">
+                    <div class="icon_wb1 icon-1" title="文件传输">&nbsp;</div>
+                    <!-- <img src="/image/sdk/iocn_06.png" alt="透明通道"/> -->
+                    <div>
+                        <div class="p-subTitle">透明通道</div>
+                        <p class="des">
+                            为上层应用提供了数据传输的能力，支持客户端之间、服务器与客户端之间的缓冲区数据传输，传输的内容没有限制。上层应用可利用透明通道传输业务层自定义的指令，并进行对应的业务逻辑处理。</p>
+
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--&lt;!&ndash;数据通信 end&ndash;&gt;-->
+    <!--&lt;!&ndash;全方位开放 start&ndash;&gt;-->
+    <div class="anychat-opening" id="opening">
+        <div class="event-img">
+            <div class="vertical-size1">
+                <h2>全方位开放</h2>
+            </div>
+            <div class="opening-list column-3">
+                <div class="vertical-size2 text-center">
+                    <h3>分层架构与分布式部署</h3>
+
+                    <p class="text-left">音视频数据流与业务逻辑松散耦合，分层架构设计，核心服务器、业务服务器互相独立，可分布式部署；业务服务器提供API接口，自主定义上层应用业务逻辑</p>
+                </div>
+                <div class="vertical-size2 text-center border-none">
+                    <h3>开放接口</h3>
+
+                    <p class="text-left">全面开放服务器端和客户端API接口、各平台接口完全统一， 支持主流开发语言，提供详细的开发文档资料；开放所有的示例程序源代码，免费下载及使用</p>
+                </div>
+                <div class="vertical-size2 text-center border-none">
+                    <h3>先开发后付费</h3>
+
+                    <p class="text-left">在未付费的情况下可以先进行评测、开发，并提供周到的一对一技术支持服务，在确定满足自己需求后再付费，减少项目风险</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="opening1">
+        <div>
+            <div>
+                <h2>全方位开放</h2>
+            </div>
+            <div>
+                <div>
+                    <h3>分层架构与分布式部署</h3>
+
+                    <p>音视频数据流与业务逻辑松散耦合，分层架构设计，核心服务器、业务服务器互相独立，可分布式部署；业务服务器提供API接口，自主定义上层应用业务逻辑</p>
+        </div>
+        <div>
+            <h3>开放接口</h3>
+
+            <p>全面开放服务器端和客户端API接口、各平台接口完全统一， 支持主流开发语言，提供详细的开发文档资料；开放所有的示例程序源代码，免费下载及使用</p>
+        </div>
+        <div>
+            <h3>先开发后付费</h3>
+
+            <p>在未付费的情况下可以先进行评测、开发，并提供周到的一对一技术支持服务，在确定满足自己需求后再付费，减少项目风险</p>
+        </div>
+    </div>
+<!--</div>-->
+<!--</div>-->
+<!--全方位开放 end-->
+<!--安全可靠 start-->
+<div class="anychat-safe-reliable" id="safe-reliable">
+    <div class="event">
+        <div class="vertical-size1">
+            <h2>安全可靠</h2>
+
+            <p>&nbsp;</p>
+        </div>
+        <div class="safe-reliable-info" id="safe-reliable-info">
+            <div class="left-side" id="left-side"><img src="./image/product/datasafe.jpg" alt=""/></div>
+            <div class="right-side" id="right-side">
+                <div class="vertical-size2 separate-space">
+                    <h3>高度安全</h3>
+
+                    <p>采用非对称加密算法进行身份鉴别，签名单次有效；通信数据加密传输，动态生成密钥；</p>
+
+                    <p>达到国家三级应用安全等级认证标准</p>
+                </div>
+                <div class="vertical-size2">
+                    <h3>持续稳定</h3>
+
+                    <p>服务集群部署，总线多活机制，提升系统容灾能力</p>
+
+                    <p>分布式多副本冗杂技术，保障您的应用可用性和可靠性</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--</div>-->
+    <!--&lt;!&ndash;安全可靠 end&ndash;&gt;-->
+    <!--&lt;!&ndash;丰富功能 start&ndash;&gt;-->
+    <div class="anychat-morefunc" id="morefunc">
+        <div class="event-img">
+            <div class="vertical-size1">
+                <h2>更丰富功能</h2>
+
+                <p>&nbsp;</p>
+            </div>
+            <div class="func-list column-2">
+                <div class="separate-line">
+                    <div class="vertical-size2 text-center">
+                        <h3>IP组播</h3>
+
+                        <p class="text-left">
+                            用IP组播技术方式可以极大的降低数据发送方的带宽要求，在支持IP组播的网络中，即便数据接收方的数量成千上万，而不会造成网络的阻塞；可在客户端或是服务器端进行组播</p>
+                    </div>
+                    <div class="vertical-size2 text-center">
+                        <h3>文字聊天</h3>
+
+                        <p class="text-left">除了音视频外，还可以实现实时的文字聊天，向指定用户发送文字消息，也可以向所有用户广播文字消息</p>
+                    </div>
+                </div>
+                <div class="vertical-size2 text-center">
+                    <h3>外部音视频输入</h3>
+
+                    <p class="text-left">
+                        通过应用程序实现音视频数据的采集及个性化处理，之后再交由AnyChat对这些数据进行编码、传输等一系列的处理，实现AnyChat服务器端、各客户端对音视频数据的互联互通</p>
+                </div>
+                <div class="vertical-size2 text-center">
+                    <h3>集成第三方编解码器</h3>
+
+                    <p class="text-left">
+                        支持加载外部音视频的编码、解码模块，如与特定的硬件平台（android、pad）集成时，可以调用硬件自身的编解码器，实现更高效率的即时通讯应用，增强系统的可扩展性</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--&lt;!&ndash;丰富功能 end&ndash;&gt;      &lt;!&ndash;联系我们 start&ndash;&gt;-->
+    <!--<div class="ct-contact">-->
+    <!--<div class="event">-->
+    <!--<div class="vertical-size1">-->
+    <!--<h2>联系我们</h2>-->
+
+    <!--<p>洽谈或了解更多关于AnyChat跨平台的音视频解决方案的信息，您可以通过电子邮件与我们联系</p>-->
+    <!--</div>-->
+    <!--<div class="op-area"><a href="/about.html#map-wrap" class="btn btn-blue">立即联系</a></div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;联系我们 end&ndash;&gt;</div>-->
+
+
+    <!-- 页脚{ -->
+    <!--footer-->
+    <!--<div id="footer">-->
+        <!--<div class="qr-code hidden-xs">-->
+            <!--<div class="qr-like-wrap">-->
+                <!--<p>AnyChat SDK移动端</p>-->
+
+                <!--<p>ios/android下载</p>-->
+                <!--<img src="./image/qr-download.png">-->
+            <!--</div>-->
+            <!--<div class="qr-download-wrap">-->
+                <!--<p>扫一扫！关注我们</p>-->
+
+                <!--<p>微信公众号</p>-->
+                <!--<img src="./image/qr-like.png">-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<ul class="foot-nav">-->
+            <!--<li><a href="/copyrightstatement.html" target="_blank">法律声明</a></li>-->
+            <!--<li><a href="/about.html#about-br" target="_blank">公司介绍</a></li>-->
+            <!--<li><a href="/about.html#company-culture" target="_blank">企业文化</a></li>-->
+            <!--<li><a href="/about.html#join-us" target="_blank">加入佰锐</a></li>-->
+            <!--<li><a href="/about.html#map-wrap" target="_blank">联系我们</a></li>-->
+        <!--</ul>-->
+        <!--<div>广州佰锐网络科技有限公司 2005-2017。 粤ICP备13022410号-2</div>-->
+        <!--<div>公司地址：广州市天河区天河软件园建工路9号309-310室；咨询电话：020-85276986</div>-->
+    <!--</div>-->
+
+</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/product.js">
+</script>
+</html>

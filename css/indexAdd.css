@@ -1,0 +1,196 @@
+.i-logo img {
+  width: 4.12rem;
+  height: 1.2rem;
+  left: 0.68rem;
+  top: 0.84rem;
+}
+.navbar-default .navbar-toggle {
+  border-color: white;
+  border: none;
+  top: 0.3rem;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: transparent;
+}
+#video-carouselm {
+  height: 11.72rem;
+  overflow: hidden;
+}
+.negative-carouselm {
+  background: url(../image/slice2/product.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.zero-carouselm {
+  background: url(../image/slice2/banner_1.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.first-carouselm {
+  background: url(../image/slice2/cetifination.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.icon-wrap {
+  width: 3.28rem;
+  height: 3.68rem;
+  float: left;
+  margin: 0.1rem;
+}
+.icon-bg {
+  background: url("../image/slice2/img1.png");
+  margin: 4px 0 -12px 19px;
+  background-position: 45px 0px;
+}
+#icon-bg1 {
+  background-position: 45px 292px;
+}
+#icon-bg2 {
+  background-position: 45px 584px;
+}
+#icon-bg3 {
+  background-position: 45px 535px;
+}
+#icon-bg4 {
+  background-position: 45px 486px;
+}
+#icon-bg5 {
+  background-position: 45px 94px;
+}
+#icon-bg6 {
+  background-position: 45px 388px;
+}
+#icon-1 {
+  margin-left: 0.8rem;
+}
+#icon-2 {
+  margin-left: 2.6rem;
+}
+.grid-icon1 {
+  display: block;
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+.carousel-indicators > li {
+  width: 30px;
+  height: 6px;
+  border-radius: 0;
+  margin: 0;
+}
+.carousel-indicators > li.active {
+  width: 30px;
+  height: 6px;
+  border-radius: 0;
+  margin: 0;
+}
+.video-list {
+  height: 11.72rem;
+  width: 100%;
+  position: relative;
+}
+.text-info {
+  width: 98%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 12px;
+  color: #333333;
+}
+#news {
+  min-width: 100px !important;
+}
+.newsMobile {
+  width: 15rem;
+  width: 10.96rem;
+  background: url("../image/slice2/img1.png");
+}
+#aboutForMobile {
+  /*height: 16rem;*/
+  width: 15rem;
+  background: url("../image/about-bairui.png") no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0.1rem;
+  padding: 50px 0;
+}
+.f-paragraphm{
+  line-height: 1.7;
+  padding: 12px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.white-titlem {
+  font-size: 26px;
+}
+#footerm {
+
+  padding: 10px;
+  background: #000000;
+  color: #ffffff;
+}
+
+#bottomSlide {
+  width: 100% !important;
+  overflow: hidden;
+  margin-left: -29px;
+}
+.normal-titlem {
+  font-size: 36px;
+  text-align: center;
+  margin: 30px 0 15px 0;
+  width: 441px;
+  width: 16.82rem;
+}
+.carousel-inner1 {
+  position: relative;
+  overflow: hidden;
+}
+.grid-icon1 {
+  display: block;
+  width: 46px;
+  height: 46px;
+}
+.solution-carousel-wrap {
+  width: 1260px;
+  margin: 0 auto;
+}
+#footer {
+  width: 100%;
+  text-align: center;
+}
+#aboutForPC {
+  margin-top: 50px;
+}
+#footerPC {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+#footerUl {
+  height: auto;
+  text-align: center;
+}
+#footerUlContainer {
+  width: 100%;
+  height: 50px;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+  height: 40px;
+}
+.normal-infom {
+  width: 412px;
+}
+
+.foot-nav_mobile li{
+  float: left;
+}

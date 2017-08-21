@@ -1,0 +1,787 @@
+@charset "UTF-8";
+/*@font-face {font-family:'Source-Han-Light-video';src:url('./font/Source-Han-video.eot');src:url('./font/Source-Han-Light-video.eot?#font-spider') format('embedded-opentype'),url('./font/Source-Han-Light-video.woff') format('woff'),url('./font/Source-Han-Light-video.ttf') format('truetype'),url('./font/Source-Han-Light-video.svg') format('svg');font-weight:normal;font-style:normal}*/
+
+a:link, a:visited {
+    text-decoration: none;
+}
+address, caption, cite, code, dfn, em, th, var {
+font-style: normal;
+font-weight: normal;
+}
+.body {
+    /*min-width: 1000px;*/
+}
+.banner .title-banner {
+    font-family: 'msyhl154503','Source-Han-Light-video','hiragino sans gb','微软雅黑','microsoft yahei','Simsun',sans-serif;
+    font-weight: normal;
+}
+.banner {
+    height: auto;
+    /*height: 718px;*/
+    background: #000 url(../image/product/video-1.jpg) top center no-repeat;
+    text-align: center;
+}
+
+.event-img {
+    position: relative;
+    width: 100%;
+    background-size: auto 100%;
+    z-index: 1;
+    max-width: 1300px;
+    /*min-width: 1000px;*/
+    margin: 0 auto;
+    color: #fff;
+}
+
+
+.icon_b 
+{
+    width:115px;
+    height:115px;
+    background:transparent url("../image/product/AnyChatSDK/features_b.png") no-repeat;
+    float: left;
+}
+
+.icon_w 
+{
+    width:115px;
+    height:115px;    
+    background:transparent url("../image/product/AnyChatSDK/features_w.png") no-repeat;
+    float: left;
+}
+.icon_wb 
+{
+    width:115px;
+    height:115px;    
+    background:transparent url("../image/product/AnyChatSDK/features_wb.png") no-repeat;
+    float: left;
+}
+
+.banner .title-banner {
+    color: #ffb800;
+    padding: 150px 0 110px 0;
+}
+.title-banner {
+    font-size: 60px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.mod-label {
+    margin: 30px 0;
+}
+
+.mod-label .line {
+height: 1px;
+border-top: 1px solid #585858;
+max-width: 1000px;
+margin: 0 auto;
+}
+
+.mod-label .line span {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    color: #282528;
+    font-size: 22px;
+    background-color: #ffb800;
+    padding: 0 10px;
+    border-radius: 3px;
+    position: relative;
+    top: -15px;
+}
+
+.banner .text-first-item {
+    color: #fff;
+    text-align: left;
+    /*width: 960px;*/
+    width: 100% !important;
+    margin: 0 auto;
+}
+
+.text-first-item {
+    font-size: 22px;
+    line-height: 44px;
+}
+
+.text-first-item:first-letter {
+    /*font-size: 72px;*/
+    float: left;
+    line-height: 44px;
+    padding: 20px 10px 0 0;
+}
+
+
+.ct-scene {
+    background: #f2f2f2;
+}
+.event {
+    padding: 90px 0 100px 0;
+    width: 100%;
+    max-width: 1300px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+.vertical-size1 
+{
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.vertical-size1 h2 {
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.ct-scene .scene-list {
+    text-align: center;
+}
+
+.ct-scene .vertical-size2 {
+    _width: 20%;
+    _zoom: 1;
+}
+
+.column-4 .vertical-size2 {
+    width: 24.5%;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    font-size: 0;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+
+.ct-scene .vertical-size2 .img-1 {
+    background-position: 0 0;
+}
+.ct-scene .vertical-size2 .img-2 {
+    background-position: -280px 0;
+}
+.ct-scene .vertical-size2 .img-3 {
+    background-position: 0 -200px;
+}
+.ct-scene .vertical-size2 .img-4 {
+    background-position: -280px -200px;
+}
+
+.ct-scene .ct-img {
+    width: 268px;
+    height: 181px;
+    background-image: url("../image/product/ac/video-sprite.png");
+    margin: 0 auto 15px;
+    _width: 246px;
+}
+
+.vertical-size2 h3 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.ct-scene .vertical-size2 p {
+    margin: 0 auto;
+    height: 200px;
+    width: 268px;
+}
+
+.vertical-size2 p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #666;
+}
+
+.vertical-size1 h2,.service-list .vertical-size2 h3,.vertical-size2 h3
+{font-family:'msyhl154503','Source-Han-Light-video','hiragino sans gb','微软雅黑','microsoft yahei','Simsun',sans-serif;font-weight:bold}
+
+.vertical-size1 p {
+    font-size: 22px;
+    line-height: 38px;
+    color: #666;
+}
+.event-img .vertical-size2 h3 {
+    color: #fff;
+}
+.horizontal-size .img, .horizontal-size img {
+    /*width: 53px;
+    height: 61px;*/
+    margin: 0 auto;
+    float: left;
+}
+
+.ct-scene .horizontal-size .img-pdf {
+    background: url("../image/product/ac/video-sprite.png") -400px -400px no-repeat;
+}
+.ct-scene .vertical-size2 .horizontal-size .info {
+    margin-top: 10px;
+}
+.horizontal-size .info {
+    margin-left: 60px;
+    text-align: left;
+}
+.horizontal-size .info .link {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+.link:hover {
+    text-decoration: underline;
+}
+.horizontal-size {
+    display: inline-block;
+    margin-bottom: 50px;
+    vertical-align: top;
+}
+.ct-scene .vertical-size2 .horizontal-size {
+    margin: 10px auto 0;
+    width: 268px;
+    _width: 246px;
+    _overflow: hidden;
+}
+.ct-scene .vertical-size2 .horizontal-size .info .des {
+    height: auto;
+    width: 100%;
+}
+.horizontal-size .info .des {
+    font-size: 16px;
+    color: #666;
+    line-height: 28px;
+}
+
+.anychat-service .service-list {
+    text-align: center;
+}
+.service-list
+{
+    padding-bottom:50px;
+}
+
+.service-list .last
+{
+    padding-bottom:0px;
+}
+
+.service-list .vertical-size2 {
+    display: inline-block;
+    vertical-align: top;
+    border-right: 1px solid #e5e5e5;
+    letter-spacing: normal;
+    word-spacing: normal;
+    padding: 0 3%;
+}
+.service-list .vertical-size2 p {
+    color: #595959;
+}
+.service-list .vertical-size2 h3 {
+    color: #0070cc;
+}
+
+.event-img .horizontal-size .info .name {
+    font-size: 24px;
+    color: #fff;
+    font-weight: normal;
+    margin: 10px 0;
+}
+.event-img .horizontal-size .info .des {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 28px;
+    text-indent: 30px;
+}
+/**/
+.anychat-video {
+    height: 780px;
+    color: #fff;
+    background: #000 url(../image/product/video-2.jpg) center center no-repeat;
+    /*background: #777 center center no-repeat;*/
+}
+
+.anychat-video .vertical-size1 {
+    padding: 80px 0 10px 0;
+}
+
+.anychat-video .vertical-size2 .label {
+    background: url("../image/product/ac/video-sprite.png") 0 -400px no-repeat;
+    width: 189px;
+    height: 189px;
+    margin: 40px auto 0;
+}
+
+.anychat-video .vertical-size2 .label-2 {
+    background-position: -200px -400px;
+}
+
+.anychat-video .vertical-size2 .label-3 {
+    background-position: 0 -600px;
+}
+
+.anychat-video .column-2 .vertical-size {
+    width: 40%;
+    padding: 0 4%;
+}
+
+.anychat-video .horizontal-size .info{
+    margin-left: 170px;
+    width: 82%;
+    _width: 82%;
+}
+.anychat-video .horizontal-size img {
+    width: 167px;
+    height: 159px;
+    padding-top: 10px;
+}
+
+.event-img .vertical-size1 p {
+    color: #d1d1d1;
+}
+.event-img .vertical-size2 p {
+    color: #d1d1d1;
+}
+
+.anychat-video .icon_w .icon-1
+{
+    float:left;
+}
+
+.icon-1
+{
+    background-position:-37px -179px;
+    margin: 28px;
+}
+
+.icon-2
+{
+    background-position:-37px -39px;
+    margin: 28px;
+}
+.icon-3
+{
+    background-position:-193px -319px;
+    margin: 28px;
+}
+.icon-4
+{
+    background-position:-505px -320px;
+    margin: 28px;
+}
+/**/
+.anychat-cross-platform .flow {
+    margin: 35px;
+    position: relative;
+}
+.anychat-cross-platform .flow .line {
+    position: absolute;
+    width: 35%;
+    height: 4px;
+    background-color: #6e7179;
+    text-align: center;
+    left: 32%;
+    z-index: 1;
+    top: 132px;
+}
+
+.anychat-cross-platform .flow .column {
+    width: 16%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.anychat-cross-platform .flow .item {
+    display: inline-block;
+    width: 115px;
+    height: 115px;
+    background: url("../image/product/AnyChatSDK/platform.png") 0 0 no-repeat;
+}
+
+.anychat-cross-platform .flow .column .item-1 
+{
+    background-position: 0px -179px;
+}
+.anychat-cross-platform .flow .column .item-2 
+{
+    background-position: -171px -12px;
+}
+
+.anychat-cross-platform .flow .column .item-3 
+{
+    background-position: -18px -319px;
+}
+.anychat-cross-platform .flow .column .item-4 
+{
+    background-position: -161px -170px;
+}
+.anychat-cross-platform .flow .column .item-5 {
+    background-position: -5px 0px;
+}
+.anychat-cross-platform .flow .column .item-6 {
+    background-position: -165px -316px;
+}
+
+/**/
+.ct-play .play-list {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.ct-play .play-list .vertical-size2 {
+    color: #fff;
+}
+
+.column-3 .vertical-size2 {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    font-size: 0;
+    color: #595959;
+}
+.column-3 .vertical-size2 p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.column-2 .horizontal-size, .column-2 .vertical-size2 {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+    word-spacing: normal;
+    font-size: 0;
+}
+/**/
+
+.label {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.ct-communicate .vertical-size2 .label {
+    background: url("../image/product/ac/video-sprite.png") 0 -400px no-repeat;
+    width: 189px;
+    height: 189px;
+    margin: 40px auto 0;
+}
+.ct-communicate .vertical-size2 p {
+    height: 110px;
+    _height: 150px;
+}
+.ct-communicate .vertical-size2 .label-2 {
+    background-position: -200px -400px;
+}
+.ct-communicate .vertical-size2 .label-3 {
+    background-position: 0 -600px;
+}
+
+.icon-5
+{
+    background-position:-185px -40px;
+    margin: 28px;
+}
+
+.icon-6
+{
+    background-position:-498px -40px;
+    margin: 28px;
+}
+/**/
+.anychat-record {
+    height: 687px;
+    background: #000 url("../image/product/video-3.jpg") top center no-repeat;
+}
+.anychat-record .vertical-size1 {
+    padding: 80px 0 10px 0;
+}
+.anychat-record .separate-line {
+    margin-bottom: 50px;
+}
+
+.anychat-record .record-list {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.column-2 .vertical-size2 {
+    width: 37%;
+    padding: 0 6%;
+}
+
+.anychat-record .file-column, .anychat-record .mode-column {
+    /*margin: 35px;*/
+    margin: 25px 0 10px 0;    
+    position: relative;
+}
+
+.anychat-record .mode-column .item {
+    display: inline-block;
+    background: url("../image/record-mode.png") 0 0 no-repeat;
+}
+
+.anychat-record .file-column .item
+{
+    display: inline-block;
+    width: 47px;
+    height: 47px;    
+    background: url("../image/record-files.png") 0 0 no-repeat;   
+}
+
+.anychat-record .mode-column .item
+{
+    width: 102px;
+    height: 70px;    
+}
+.anychat-record .file-column .column {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.anychat-record .mode-column .column {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.anychat-record .file-column .column .item-1 
+{
+    background-position: -16px -14px;
+}
+
+.anychat-record .file-column .column .item-2 
+{
+    background-position: -143px -14px;
+}
+.anychat-record .file-column .column .item-3 
+{
+    background-position: -206px -14px;
+}
+.anychat-record .file-column .column .item-4 
+{
+    background-position: -79px -14px;
+}
+
+.anychat-record .mode-column .column .item-1
+{
+    margin-left:-40px;
+    background-position: -6px -13px;
+}
+.anychat-record .mode-column .column .item-2
+{
+    margin-left:-90px;
+    background-position: -146px -13px;
+}
+.anychat-record .mode-column .column .item-3
+{
+    margin-left:-55px;
+    width:196px;
+    height:70px;
+    background-position: -261px -13px;
+}
+/**/
+.anychat-opening {
+    /*height: 673px;*/
+    height: 518px;
+    color: #fff;
+    background: #000 url(../image/product/video-4.jpg) top center no-repeat;
+}
+
+.anychat-opening .opening-list {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.anychat-opening .opening-list .vertical-size2 {
+    color: #fff;
+}
+
+.anychat-opening .vertical-size1 {
+    padding: 80px 0 10px 0;
+}
+
+/**/
+.anychat-safe-reliable {
+}
+
+.anychat-safe-reliable .left-side {
+    text-align: right;
+}
+.anychat-safe-reliable .right-side .separate-space {
+    margin-bottom: 40px;
+}
+/**/
+.anychat-morefunc {
+    height: 719px;
+    color: #fff;
+    background: #000 url(../image/product/video-5.jpg) top center no-repeat;
+}
+
+.anychat-morefunc .func-list {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.anychat-morefunc .vertical-size1 {
+    padding: 80px 0 10px 0;
+}
+
+.anychat-morefunc .separate-line {
+    margin-bottom: 50px;
+}
+
+/**/
+.left-side {
+    width: 45%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+.right-side {
+    width: 45%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    padding: 0 0 0 40px;
+}
+.ct-monitor .right-side .separate-space {
+    margin-bottom: 40px;
+}
+.ct-monitor .vertical-size2 p {
+    color: #676767;
+}
+
+/**/
+.ct-contact {
+    background: #fff;
+}
+
+.op-area {
+text-align: center;
+}
+
+.op-area a
+{
+    color: #fff;
+}
+
+.btn {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 3px;
+    border-radius: 4px\9;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 20px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    outline: none;
+}
+
+.btn {
+    padding: 0 0;
+    font-weight: normal;
+}
+.btn-blue:hover {
+    background: #007ee6;
+    color: #fff;
+    text-decoration: none;
+}
+.btn-blue {
+    display: inline-block;
+    height: 50px;
+    width: 220px;
+    line-height: 50px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #0070cc;
+    text-align: center;
+}
+
+/**/
+fieldset, img, a img, iframe {
+border-width: 0;
+border-style: none;
+}
+
+.ct-customer .horizontal-size img {
+width: 184px;
+height: 140px;
+}
+.horizontal-size .info {
+    /*margin-left: 60px;*/
+    margin-left: 165px;
+    text-align: left;
+}
+.ct-customer .horizontal-size .info {
+margin-left: 195px;
+width: 60%;
+_width: 50%;
+}
+.horizontal-size .info .name {
+    font-size: 24px;
+    color: #000;
+    font-weight: normal;
+    margin: 10px 0;
+}
+.horizontal-size .info .des {
+    font-size: 16px;
+    color: #666;
+    line-height: 28px;
+}
+
+.column-2 .horizontal-size {
+    width: 40%;
+    padding: 0 4%;
+}
+
+/**/
+.promises {
+background: #0d77cf;
+color: #fff;
+}
+.promises .wrap {
+width: 100%;
+max-width: 1300px;
+margin: auto;
+text-align: center;
+padding: 35px 0;
+}
+.promise {
+width: 19%;
+display: inline-block;
+vertical-align: top;
+}
+.promise .fluid {
+border-right: 1px solid #318bd6;
+display: block;
+color: #fff;
+}
+.promise .fluid em {
+display: block;
+font-size: 22px;
+}
+.promise .fluid strong {
+font-size: 42px;
+font-weight: normal;
+}
+
+.promise .fluid span {
+font-size: 22px;
+}
